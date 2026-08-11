@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield Outer Outline -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M54,26 L30,34 V52 C30,67.5 40.5,81.5 54,86 C67.5,81.5 78,67.5 78,52 V34 L54,26 Z" />
+    <!-- Inner Accent -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M54,30 L34,36.8 V52 C34,64.8 42.6,76.5 54,80.5 C65.4,76.5 74,64.8 74,52 V36.8 L54,30 Z" />
+    <!-- Keyhole & Ring -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,44 C49.6,44 46,47.6 46,52 C46,54.8 47.4,57.2 49.5,58.7 L48,68 H60 L58.5,58.7 C60.6,57.2 62,54.8 62,52 C62,47.6 58.4,44 54,44 Z" />
+</vector>
