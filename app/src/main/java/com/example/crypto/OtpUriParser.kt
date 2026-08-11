@@ -69,7 +69,7 @@ object OtpUriParser {
             try { URLDecoder.decode(it, "UTF-8") } catch (e: Exception) { it }
         }
         val finalIssuer = when {
-            !queryIssuer.isNull0orBlank() -> queryIssuer!!
+            !queryIssuer.isNullOrBlank() -> queryIssuer
             labelIssuer.isNotBlank() -> labelIssuer
             else -> ""
         }
@@ -102,6 +102,4 @@ object OtpUriParser {
             counter = counter
         )
     }
-
-    private fun String?.isNull0orBlank(): Boolean = this == null || this.isBlank()
 }
