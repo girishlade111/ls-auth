@@ -15,7 +15,7 @@ android {
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.aistudio.lsauth.vxtqzw"
+    applicationId = "com.lsauth.app"
     minSdk = 24
     targetSdk = 36
     versionCode = 1
@@ -126,7 +126,7 @@ dependencies {
 publishing {
   publications {
     create<MavenPublication>("gpr") {
-      groupId = "com.aistudio.lsauth"
+      groupId = "com.lsauth"
       artifactId = "ls-auth"
       version = "1.0.0"
 
