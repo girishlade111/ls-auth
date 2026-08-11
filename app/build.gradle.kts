@@ -7,6 +7,7 @@ plugins {
   alias(libs.plugins.roborazzi)
   alias(libs.plugins.secrets)
   alias(libs.plugins.google.services)
+  id("maven-publish")
 }
 
 android {
@@ -121,3 +122,29 @@ dependencies {
   debugImplementation(libs.androidx.compose.ui.tooling)
   "ksp"(libs.androidx.room.compiler)
 }
+
+publishing {
+  publications {
+    create<MavenPublication>("gpr") {
+      groupId = "com.aistudio.lsauth"
+      artifactId = "ls-auth"
+      version = "1.0.0"
+
+      artifact(file("${layout.buildDirectory.get()}/outputs/apk/debug/app-debug.apk")) {
+        classifier = "debug"
+        extension = "apk"
+      }
+    }
+  }
+  repositories {
+    maven {
+      name = "GitHubPackages"
+      url = uri("https://maven.pkg.github.com/girishlade111/ls-auth")
+      credentials {
+        username = System.getenv("GITHUB_ACTOR") ?: "girishlade111"
+        password = System.getenv("GITHUB_TOKEN") ?: ""
+      }
+    }
+  }
+}
+
