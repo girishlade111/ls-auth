@@ -269,3 +269,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 *Built with ❤️ for privacy-first security. Your codes stay yours.*
+
+---
+
+## Credits
+
+Built by [Girish Lade](https://ladestack.in) — part of the [LadeStack](https://ladestack.in) family of free, privacy-first tools.
